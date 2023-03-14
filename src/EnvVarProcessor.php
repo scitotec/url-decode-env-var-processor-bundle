@@ -16,7 +16,7 @@ class EnvVarProcessor implements EnvVarProcessorInterface
         ];
     }
 
-    public function getEnv(string $prefix, string $name, Closure $getEnv): ?string
+    public function getEnv($prefix, $name, Closure $getEnv): ?string
     {
         $env = $getEnv($name);
 

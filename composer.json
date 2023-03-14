@@ -3,7 +3,7 @@
     "description": "Symfony Environment Variable Processor for decoding url-encoded strings",
     "type": "library",
     "require": {
-        "php": ">=7.1.3",
+        "php": ">=7.2",
         "symfony/framework-bundle": "^4.2|^5.0|^6.0"
     },
     "license": "MIT",
@@ -12,10 +12,18 @@
             "Scitotec\\UrlDecodeEnvVarProcessorBundle\\": "src/"
         }
     },
+    "autoload-dev": {
+        "psr-4": {
+            "Scitotec\\UrlDecodeEnvVarProcessorBundle\\Tests\\": "src/"
+        }
+    },
     "authors": [
         {
             "name": "Robert Worgul",
             "email": "robert.worgul@scitotec.de"
         }
-    ]
+    ],
+    "require-dev": {
+        "symfony/test-pack": "^1.1"
+    }
 }
